@@ -1,0 +1,35 @@
+{
+  "name": "templates",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "homepage": "https://vladimirzimin.github.io/weather",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /weather/",
+    "deploy": "gh-pages -d dist",
+    "server": "json-server --watch db.json -p 4040 -d 300"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimirzimin/weather"
+  },
+  "keywords": [],
+  "author": "Vladimir Zimin <zimin.frontend@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "gh-pages": "^5.0.0",
+    "parcel": "^2.8.3",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "parcel-transformer-hbs": "^1.0.4",
+    "posthtml-include": "^1.7.4",
+    "prettier": "2.8.3",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "notiflix": "^3.2.6"
+  }
+}

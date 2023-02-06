@@ -1,0 +1,23 @@
+<section class='main'>
+  <div class='temperature'>
+    <p class='temperature__value'>{{temp_c}}<sup>&#176C</sup></p>
+    <p class='temperature__feelslike'>Ощущается как: {{feelslike_c}}&#176</p>
+  </div>
+  <div class='weather'>
+    <p class='weather__icon'>
+      <img src='{{condition.icon}}' alt='{{condition.text}}' />
+    </p>
+    <p class='weather__descriptions'>{{condition.text}}</p>
+  </div>
+</section>
+
+<section class='feature'>
+  <ul class='feature__list'>
+    <li class='feature__item'>Облачность: {{cloud}} %</li>
+    <li class='feature__item'>Влажность: {{humidity}} %</li>
+    <li class='feature__item'>Осадок: {{precip_mm}} мм</li>
+    <li class='feature__item'>Давление: {{pressure_mb}} мм </li>
+    <li class='feature__item'>Видимость: {{vis_km}} км</li>
+    <li class='feature__item'>Скорость ветра: {{wind_kph}} км/ч</li>
+  </ul>
+</section>
